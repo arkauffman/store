@@ -2,11 +2,11 @@
 
 %p
   %b Name:
-  = @product.name
+  = @products.name
 %p
   %b Price:
-  = @product.price
+  = @products.price
 
-= link_to 'Edit', edit_product_path(@product)
+= link_to 'Edit', edit_product_path(@products)
 \|
 = link_to 'Back', products_path

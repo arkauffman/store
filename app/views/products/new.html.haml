@@ -1,5 +1,13 @@
 %h1 New product
 
-= render 'form'
+= form_for @products do |f|
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :price
+    = f.text_field :price
+  .actions
+    = f.submit 'Save'
 
 = link_to 'Back', products_path
