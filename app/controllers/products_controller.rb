@@ -8,8 +8,9 @@ class ProductsController < ApplicationController
   end
 
   # GET /products/1
-  # GET /products/1.json
+  # GET /products/1.json 
   def show
+    @products = Product.find(params[:id])
   end
 
   # GET /products/new
@@ -19,6 +20,7 @@ class ProductsController < ApplicationController
 
   # GET /products/1/edit
   def edit
+    @products = Tweet.find(params[:id])
   end
 
   # POST /products
